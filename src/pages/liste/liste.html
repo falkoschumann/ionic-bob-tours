@@ -12,10 +12,9 @@
 
 </ion-header>
 
-
 <ion-content padding>
   <ion-list>
-    <button ion-item *ngFor="let tour of touren">
+    <button ion-item *ngFor="let tour of touren" (click)="showDetails(tour)">
       {{tour.Titel}}
     </button>
   </ion-list>

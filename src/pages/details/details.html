@@ -5,14 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>{{tour.Titel}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
   <button ion-button (click)="navigate()">Tour anfrage</button>
+  <button ion-button (click)="favService.add(tour); istFavorit=true;" *ngIf="!istFavorit">Zu Favoriten hinzufügen</button>
+  <button ion-button (click)="favService.remove(tour); istFavorit=false;" *ngIf="istFavorit">Aus Favoriten entfernen</button>
 </ion-content>

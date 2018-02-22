@@ -18,6 +18,9 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item *ngFor="let tour of touren" (click)="showDetails(tour)">{{tour.Titel}}</button>
+    <button ion-item *ngFor="let tour of favService.touren" (click)="showDetails(tour)">{{tour.Titel}}</button>
   </ion-list>
+  <label *ngIf="favService.keineFavoriten">
+    Du hast noch keine Favoriten hinzugefügt!
+  </label>
 </ion-content>

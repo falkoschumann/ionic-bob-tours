@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import _ from 'lodash';
 import 'rxjs/add/operator/map';
 
+import { FavoritenServiceProvider } from '../favoriten-service/favoriten-service';
+
 /*
   Generated class for the BobToursServiceProvider provider.
 
@@ -18,14 +20,13 @@ export class BobToursServiceProvider {
 
   baseUrl = 'https://bob-tours-app-13843.firebaseio.com/';
 
-  constructor(public http: Http) {
-    console.log('Hello BobToursServiceProvider Provider');
-  }
+  constructor(public http: Http,
+    private favService: FavoritenServiceProvider) { }
 
   initializeService() {
     this.getRegionen().then(data => this.regionen = data);
     this.getTourtypen().then(data => this.tourtypen = data);
-    this.getTouren().subscribe(data => this.touren = data);
+    this.getTourenAndFavoriten();
   }
 
   getRegionen() {
@@ -47,6 +48,13 @@ export class BobToursServiceProvider {
       .map((response) => {
         return _.sortBy(response.json(), 'Titel');
       })
+  }
+
+  getTourenAndFavoriten() {
+    this.getTouren().subscribe(data => {
+      this.touren = data;
+      this.favService.init(this.touren);
+    });
   }
 
 }

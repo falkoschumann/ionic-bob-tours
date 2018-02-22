@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { FavoritenServiceProvider } from '../../providers/favoriten-service/favoriten-service';
+
 /**
  * Generated class for the FavoritenPage page.
  *
@@ -15,41 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FavoritenPage {
 
-  touren = [
-    { ID: '1', Titel: 'Stadtrundgang Bonn' },
-    { ID: '2', Titel: 'Auf den Spuren von Beethoven' },
-    { ID: '3', Titel: 'Villa Hammerschmidt' }
-  ];
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad');
-  }
-
-  ionViewWillEnter() {
-    console.log('ionViewWillEnter');
-  }
-
-  ionViewDidEnter() {
-    console.log('ionViewDidEnter');
-  }
-
-  ionViewWillLeave() {
-    console.log('ionViewWillLeave');
-  }
-
-  ionViewDidLeave() {
-    console.log('ionViewDidLeave');
-  }
-
-  ionViewWillUnload() {
-    console.log('ionViewWillUnload');
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private favService: FavoritenServiceProvider) { }
 
   showDetails(tour) {
-    console.log(tour.Titel);
     this.navCtrl.push('DetailsPage', tour);
   }
 

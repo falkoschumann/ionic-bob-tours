@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { FavoritenServiceProvider } from '../../providers/favoriten-service/favoriten-service';
+
 /**
  * Generated class for the DetailsPage page.
  *
@@ -16,13 +18,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DetailsPage {
 
   tour = {};
+  istFavorit: boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private favService: FavoritenServiceProvider) {
   }
 
   ionViewDidLoad() {
     this.tour = this.navParams.data;
-    console.log('ionViewDidLoad DetailsPage', this.navParams);
+    this.istFavorit = this.favService.IDs.indexOf(this.navParams.data.ID) != -1;
   }
 
   navigate() {

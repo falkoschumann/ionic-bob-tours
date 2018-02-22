@@ -34,4 +34,8 @@ export class ListePage {
     this.touren = _.filter(this.btService.touren, [this.filter, this.auswahl.ID]);
   }
 
+  showDetails(tour) {
+    this.navCtrl.push('DetailsPage', tour);
+  }
+
 }

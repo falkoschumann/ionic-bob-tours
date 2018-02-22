@@ -7,6 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MyApp } from './app.component';
 import { BobToursServiceProvider } from '../providers/bob-tours-service/bob-tours-service';
+import { FavoritenServiceProvider } from '../providers/favoriten-service/favoriten-service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BobToursServiceProvider } from '../providers/bob-tours-service/bob-tour
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    BobToursServiceProvider
+    BobToursServiceProvider,
+    FavoritenServiceProvider
   ]
 })
 export class AppModule { }
