@@ -14,5 +14,9 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item *ngFor="let tour of touren">
+      {{tour.Titel}}
+    </button>
+  </ion-list>
 </ion-content>

@@ -25,7 +25,27 @@ export class FavoritenPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FavoritenPage');
+    console.log('ionViewDidLoad');
+  }
+
+  ionViewWillEnter() {
+    console.log('ionViewWillEnter');
+  }
+
+  ionViewDidEnter() {
+    console.log('ionViewDidEnter');
+  }
+
+  ionViewWillLeave() {
+    console.log('ionViewWillLeave');
+  }
+
+  ionViewDidLeave() {
+    console.log('ionViewDidLeave');
+  }
+
+  ionViewWillUnload() {
+    console.log('ionViewWillUnload');
   }
 
   showDetails(tour) {

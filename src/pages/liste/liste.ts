@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import _ from 'lodash';
+
+import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service';
 
 /**
  * Generated class for the ListePage page.
@@ -15,11 +18,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  filter: string = '';
+  auswahl: any;
+  titel: string = '';
+  touren = [];
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private btService: BobToursServiceProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListePage');
+    this.filter = this.navParams.data[0];
+    this.auswahl = this.navParams.data[1];
+    this.titel = this.auswahl.Name;
+    this.touren = _.filter(this.btService.touren, [this.filter, this.auswahl.ID]);
   }
 
 }

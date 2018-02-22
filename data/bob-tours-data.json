@@ -1,0 +1,425 @@
+{
+  "Regionen" : [ {
+    "ID" : "BN",
+    "Icon" : "home",
+    "Name" : "Bonn City"
+  }, {
+    "ID" : "BU",
+    "Icon" : "rose",
+    "Name" : "Bonner Umland"
+  }, {
+    "ID" : "SG",
+    "Icon" : "ios-analytics",
+    "Name" : "Siebengebirge"
+  } ],
+  "Touren" : [ {
+    "Beschreibung" : "Erhalten Sie einen spannenden Überblick über die wichtigsten Sehenswürdigkeiten der Bonner Innenstadt: Münster-Basilika, Beethovens Geburtshaus, Kurfürstenresidenz, Altes Rathaus.",
+    "Bild" : "city.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 1,
+    "PreisD" : 90,
+    "PreisF" : 110,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.735027",
+      "Lng" : "7.103140",
+      "Ort" : "Markt 2, 53111 Bonn"
+    },
+    "Titel" : "Stadtrundgang Bonn",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Viel Sehen in kurzer Zeit! Erhalten Sie einen spannenden Überblick über die wichtigsten Sehenswürdigkeiten Bonns: Münster-Basilika, Kurfürstenresidenz, ehemaliges Regierungsviertel und Museumsmeile. Ihre Gruppe hat keinen eigenen Bus? Wir organisieren Ihnen einen!",
+    "Bild" : "bob-bus.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 100,
+    "ID" : 2,
+    "PreisD" : 80,
+    "PreisF" : 90,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.731822",
+      "Lng" : "7.099564",
+      "Ort" : "Zentraler Omnibus-Bahnhof, 53111 Bonn"
+    },
+    "Titel" : "Stadtrundfahrt Bonn",
+    "Tourtyp" : "BF"
+  }, {
+    "Beschreibung" : "Lassen Sie sich durch den ehemaligen Plenarsaal des Deutschen Bundestages und das Alte Wasserwerk führen, Orte, an denen die Geschichte der jungen Bundesrepublik geschrieben wurde.",
+    "Bild" : "bundestag.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 3,
+    "PreisD" : 120,
+    "PreisF" : 150,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.719129",
+      "Lng" : "7.123502",
+      "Ort" : "Platz der vereinten Nationen, 53113 Bonn"
+    },
+    "Titel" : "Ehemaliger Deutscher Bundestag",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Das WCCB, 2015 zur 39. Weltkonferenz des Weltkulturerbes eröffnet, wird Sie mit seiner modernen Architektur und Veranstaltungsräumen für bis zu 5.000 Gästen beeindrucken.",
+    "Bild" : "wccb.jpg",
+    "Dauer" : 45,
+    "Gruppengroesse" : 25,
+    "ID" : 4,
+    "PreisD" : 120,
+    "PreisF" : 150,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.719129",
+      "Lng" : "7.123502",
+      "Ort" : "Platz der Vereinten Nationen, 53113 Bonn"
+    },
+    "Titel" : "World Conference Center Bonn",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Ludwig van Beethoven, 1770 in der Bonngasse 20 als Sohn einer Musikerfamilie geboren, ist der berühmteste Sohn Bonns. Während dieses Rundgangs erfahren Sie allerlei Spannendes aus dem Leben dieses musikalischen Genies.",
+    "Bild" : "beethoven.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 5,
+    "PreisD" : 80,
+    "PreisF" : 95,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.736827",
+      "Lng" : "7.101130",
+      "Ort" : "Bonngasse 20, 53111 Bonn"
+    },
+    "Titel" : "Auf den Spuren von Beethoven",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "\"Was Versailles für Paris ist, das ist Bad Godesberg für die Bundesstadt Bonn.\" Erhalten Sie bei diesem 1½-stündigen Rundgang durch das Villenviertel von Bad Godesberg eine „kleine Einführung in die Diplomatie“.",
+    "Bild" : "villenviertel.jpg",
+    "Dauer" : 90,
+    "Gruppengroesse" : 25,
+    "ID" : 6,
+    "PreisD" : 150,
+    "PreisF" : 180,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.687360",
+      "Lng" : "7.158042",
+      "Ort" : "Königsplatz 2, 53173 Bonn"
+    },
+    "Titel" : "Bonns Botschaften und Residenzen",
+    "Tourtyp" : "RT"
+  }, {
+    "Beschreibung" : "Vom Gewerbegebiet zur Genießeroase. Im Bonner Bogen wird der Wandel der Zeiten sichtbar: Die alte Zementfabrik erwacht bei einer Außenbesichtigung der noch bestehenden Gebäude (Büro, Direktorenvilla, Rohmühle) wieder zum Leben. Direkt nebenan: Das futuristische Kameha Grand Hotel, das wir aus verschiedenen Perspektiven betrachten werden und das nicht nur einen Besuch an der Bar wert ist...",
+    "Bild" : "bonner-bogen.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 7,
+    "PreisD" : 90,
+    "PreisF" : 110,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.717854",
+      "Lng" : "7.153577",
+      "Ort" : "Joseph-Schumpeter-Allee 1, 53227 Bonn"
+    },
+    "Titel" : "Bonner Bogen",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Das Rheinland hat eine unglaubliche Anzahl an Kirchen und Kapellen, die jede für sich ihre eine Geschichte erzählt. Erleben Sie die wechselvolle Kunstgeschichte sakraler Bauten aus mehreren Jahrhunderten. Für Kirchen-Liebhaber und Architekturbegeisterte ein Muss.",
+    "Bild" : "bonn-kirche.jpg",
+    "Dauer" : 120,
+    "Gruppengroesse" : 20,
+    "ID" : 8,
+    "PreisD" : 170,
+    "PreisF" : 200,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.734292",
+      "Lng" : "7.103111",
+      "Ort" : "An der Schlosskirche, 53113 Bonn"
+    },
+    "Titel" : "Kirchen in und um Bonn",
+    "Tourtyp" : "RT"
+  }, {
+    "Beschreibung" : "In Rhöndorf nahe Bonn hat der erste deutsche Bundeskanzler Konrad Adenauer während seiner Bonner Regierungszeit und danach bis zu seinem Tod 1967 gewohnt. Besuchen Sie das frühere Wohnhaus Adenauers, das heute Gedenkstätte ist und einen wichtigen Beitrag zum Verständnis des Entstehens der Bundesrepublik Deutschland leistet.",
+    "Bild" : "konrad-adenauer-haus.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 9,
+    "PreisD" : 80,
+    "PreisF" : 95,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.657700",
+      "Lng" : "7.217970",
+      "Ort" : "Stiftung Bundeskanzler-Adenauer-Haus, 53604 Königswinter-Rhöndorf"
+    },
+    "Titel" : "Konrad-Adenauer-Haus",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Eine Wanderung in die Weinberge am Drachenfels bietet die Möglichkeit, eine Weinlandschaft im eigenen Rhythmus wahr zu nehmen. So können Sie sich Kultur und Menschen nähern, auf der Suche nach den besten Winzererzeugnisse eines landschaftlich reizvollen Gebietes. ",
+    "Bild" : "weinberg.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 10,
+    "PreisD" : 80,
+    "PreisF" : 110,
+    "Region" : "SG",
+    "Startpunkt" : {
+      "Lat" : "50.671350",
+      "Lng" : "7.194076",
+      "Ort" : "Maritimhotel, 53639 Königswinter"
+    },
+    "Titel" : "Wein-Wanderung",
+    "Tourtyp" : "WA"
+  }, {
+    "Beschreibung" : "Eine Wanderung zu drei der sieben Berge des Siebengebirges verspricht ein ganz besonderes Erlebnis zu werden. Erfahren Sie dabei so einiges über Besiedlung, Burgen, Geologie, Natur und natürlich den Rhein und seine Sagen.",
+    "Bild" : "siebengebirge.jpg",
+    "Dauer" : 180,
+    "Gruppengroesse" : 25,
+    "ID" : 11,
+    "PreisD" : 160,
+    "PreisF" : 200,
+    "Region" : "SG",
+    "Startpunkt" : {
+      "Lat" : "50.673701",
+      "Lng" : "7.198892",
+      "Ort" : "Drachenfelsstraße 59, 53639 Königswinter"
+    },
+    "Titel" : "Siebengebirge",
+    "Tourtyp" : "WA"
+  }, {
+    "Beschreibung" : "Auf knapp 330m über NN liegt das Steigenberger Grandhotel majestätisch auf dem Petersberg. Doch nicht allein die traumhafte Lage und der fantastische Blick auf Bonn sprechen für einen Besuch des Gästehauses der Bundesrepublik. Das von 1985-1990 renovierte Gebäude ist ein Ort, an dem Geschichte geschrieben wurde.",
+    "Bild" : "petersberg.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 12,
+    "PreisD" : 100,
+    "PreisF" : 120,
+    "Region" : "SG",
+    "Startpunkt" : {
+      "Lat" : "50.685952",
+      "Lng" : "7.207554",
+      "Ort" : "Steigenberger Grandhotel Petersberg, 53639 Königswinter"
+    },
+    "Titel" : "Petersberg",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Von Montag bis Freitag zwischen 9:30 und 12:00 Uhr steht der zweite Dienstsitz des Bundespräsidenten für Besuchergruppen zur Verfügung. Lernen Sie bei einer Begehung die schmucken Repräsentationsräume kennen. Wir weisen darauf hin, dass die Besichtigung der Villa Hammerschmidt bei kurzfristiger Nutzung durch den Bundespräsident, seine Mitarbeiter oder bei erhöhten Sicherheitsanforderungen in Einzelfällen entfallen oder nur eingeschränkt durchgeführt werden kann.",
+    "Bild" : "villa-hammerschmidt.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 13,
+    "PreisD" : 80,
+    "PreisF" : 100,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.722800",
+      "Lng" : "7.117340",
+      "Ort" : "Adenauerallee 135, 53113 Bonn"
+    },
+    "Titel" : "Villa Hammerschmidt",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Wer als echter Wanderer im Siebengebirge eine Alternative zu den in der Hauptsaison oft überlaufenen Hauptwegen sucht, ist hier genau richtig: Über das reizvolle Nachtigallental bei Königswinter wagen wir uns hinauf ins Siebengebirge zu Drachenfels, Ostermann-Denkmal, weiter zu Milchhäuschen und Petersberg, hinab über den Bittweg zurück nach Königswinter (10 km).",
+    "Bild" : "drachenfels.jpg",
+    "Dauer" : 180,
+    "Gruppengroesse" : 25,
+    "ID" : 14,
+    "PreisD" : 160,
+    "PreisF" : 200,
+    "Region" : "SG",
+    "Startpunkt" : {
+      "Lat" : "50.678638",
+      "Lng" : "7.193592",
+      "Ort" : "Bahnhof, 53639 Königswinter"
+    },
+    "Titel" : "Wanderung durchs Nachtigallental",
+    "Tourtyp" : "WA"
+  }, {
+    "Beschreibung" : "Bei dieser Tour begeben Sie sich auf eine Zeitreise rund um den Weihnachtsmarkt in Bonn, um allerlei Wissenswertes und Kurioses über die Adventszeit zu erfahren. Alte Gemäuer, duftende Gewürze, Kerzenschein ... all' das wird uns zu einer außergewöhnlichen Weihnachtsstimmung verhelfen! Während der Führung kehren wir in ein Café der Innenstadt ein.",
+    "Bild" : "weihnachtsmarkt.jpg",
+    "Dauer" : 90,
+    "Gruppengroesse" : 25,
+    "ID" : 15,
+    "PreisD" : 130,
+    "PreisF" : 180,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.732784",
+      "Lng" : "7.101429",
+      "Ort" : "Am Neutor 2, 53113 Bonn"
+    },
+    "Titel" : "Nostalgische Weihnachtsführung",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Im Rahmen eines Stadtrundgangs durch die mehr als 2000-jährige Geschichte Königswinters möchten wir Sie unterhaltsam informieren. Gerne \"ent“führen wir Sie durch die malerischen Gassen, kunstvoll gestaltete Häuser oder Baudenkmäler. Wir vermitteln Ihnen auch einen Einblick in rheinisches Lebensgefühl und Brauchtum. Freizeittipps für die nähere Umgebung sowie Infos zu eher versteckten \"Schätzen\" runden das Programm ab.",
+    "Bild" : "koenigswinter.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 16,
+    "PreisD" : 80,
+    "PreisF" : 110,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.674285",
+      "Lng" : "7.192644",
+      "Ort" : "Kellerstraße 12, 53639 Königswinter"
+    },
+    "Titel" : "Königswinter",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Entdecken Sie zwischen den malerischen Fachwerkhäusern spannende Hinweise auf die Frühgeschichte und das Mittelalter in der Bunten Stadt am Rhein. Gruseln Sie sich in der Folterkammer der Burg und bestaunen Sie die Glasbläser in der Römischen Glashütte bei der Ausübung ihres faszinierenden Traditionshandwerks.",
+    "Bild" : "linz-stadt.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 17,
+    "PreisD" : 80,
+    "PreisF" : 110,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.566090",
+      "Lng" : "7.278660",
+      "Ort" : "Burgplatz 4, 53545 Linz"
+    },
+    "Titel" : "Linz, die bunte Stadt am Rhein",
+    "Tourtyp" : "SW"
+  }, {
+    "Beschreibung" : "Diese schöne Radtour entlang des Rheins führt uns 19 km abseits der Straßen von Königswinter über Rhöndorf, Bad Honnef, Unkel und Erpel nach Linz. An verschiedenen Stationen machen wir einen Stopp und erfahren Interessantes über Land, Leute und das Leben am Rhein.",
+    "Bild" : "bonn-rad.jpg",
+    "Dauer" : 240,
+    "Gruppengroesse" : 40,
+    "ID" : 18,
+    "PreisD" : 170,
+    "PreisF" : 200,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.673704",
+      "Lng" : "7.198888",
+      "Ort" : "Drachenfelsstraße 59, 53639 Könisgwinter"
+    },
+    "Titel" : "Rhein-Radtour",
+    "Tourtyp" : "RT"
+  }, {
+    "Beschreibung" : "Diese schöne Segwaytour entlang des Rheins führt uns 9 km abseits der Straßen von Königswinter über Rhöndorf nach Bad Honnef. An verschiedenen Stationen machen wir einen Stopp und erfahren Interessantes über Land, Leute und das Leben am Rhein.",
+    "Bild" : "posttower-am-abend.jpg",
+    "Dauer" : 240,
+    "Gruppengroesse" : 25,
+    "ID" : 19,
+    "PreisD" : 170,
+    "PreisF" : 200,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.673704",
+      "Lng" : "7.198888",
+      "Ort" : "Drachenfelsstraße 59, 53639 Könisgwinter"
+    },
+    "Titel" : "Rhein-Segwaytour",
+    "Tourtyp" : "SW"
+  }, {
+    "Beschreibung" : "Tauchen Sie ein in die Welt der zeitgenössischen Kunst mit wechselnden Ausstellungen rund um die Werke von Hans Arp und Sophie Taeuber-Arp. Auch Werke vom Mittelalter bis in die Moderne werden Ihnen hier präsentiert (UNICEF-Sammlung Rau). Ein fantastisches Museum mit wunderbarer Architektur. Im Anschluss an die Führung besteht auch Gelegenheit zur Begehung des Skulpturenufers Remagen.",
+    "Bild" : "arp.jpg",
+    "Dauer" : 60,
+    "Gruppengroesse" : 25,
+    "ID" : 20,
+    "PreisD" : 80,
+    "PreisF" : 110,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.631734",
+      "Lng" : "7.207383",
+      "Ort" : "Oskar-Kokoschka-Platz, 53424 Remagen"
+    },
+    "Titel" : "Arp Museum Bahnhof Rolandseck",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Diese schöne Schiffstour über den Rhein führt uns von Bonn über Bad Godesberg, Könisgwinter, Bad Honnef, Rolandseck, Unkel und Remagen nach Linz und wieder zurück. Dabei erfahren Sie Interessantes über Land, Leute und das Leben am Rhein.",
+    "Bild" : "bonn-rhein-schiff.jpg",
+    "Dauer" : 240,
+    "Gruppengroesse" : 200,
+    "ID" : 21,
+    "PreisD" : 400,
+    "PreisF" : 450,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.734462",
+      "Lng" : "7.108791",
+      "Ort" : "Brassertufer, 53113 Bonn"
+    },
+    "Titel" : "Der Rhein zwischen Bonn und Linz",
+    "Tourtyp" : "ST"
+  }, {
+    "Beschreibung" : "Diese schöne Schiffstour über den Rhein führt uns von Bonn nach Köln und wieder zurück. Dabei erfahren Sie Interessantes über Land, Leute und das Leben am Rhein.",
+    "Bild" : "koeln.jpg",
+    "Dauer" : 240,
+    "Gruppengroesse" : 80,
+    "ID" : 22,
+    "PreisD" : 240,
+    "PreisF" : 280,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.734462",
+      "Lng" : "7.108791",
+      "Ort" : "Brassertufer, 53113 Bonn"
+    },
+    "Titel" : "Rheinische Städtetour von Bonn nach Köln",
+    "Tourtyp" : "ST"
+  }, {
+    "Beschreibung" : "Die Rheinische Friedrich-Wilhelms-Universität Bonn gehört zu den großen Traditionsuniversitäten Deutschlands. Die Tour führt Sie durch die wichtigsten Räume der Universität, darunter die „Blaue Grotte“. Darüber hinaus wandeln Sie durch die Säulenhalle und haben die Gelegenheit, einen Blick in die große Aula zu werfen – vorausgesetzt, dass dort nicht gerade eine Veranstaltung stattfindet. Abschluss der Führung ist ein Besuch des Mitte 2013 eröffneten Uni-Museums, einem von zurzeit nur vier Museen dieser Art in Deutschland.",
+    "Bild" : "universitaet.jpg",
+    "Dauer" : 120,
+    "Gruppengroesse" : 20,
+    "ID" : 23,
+    "PreisD" : 120,
+    "PreisF" : 150,
+    "Region" : "BN",
+    "Startpunkt" : {
+      "Lat" : "50.734206",
+      "Lng" : "7.104002",
+      "Ort" : "Uni Bonn, Regina-Pacis-Weg 3, 53113 Bonn"
+    },
+    "Titel" : "Universität Bonn",
+    "Tourtyp" : "RG"
+  }, {
+    "Beschreibung" : "Die Tour führt durch die Bonner Südstadt mit ihrem fast vollständig erhaltenen Wohnviertel im schönen Baustil des Historismus aus der Gründerzeit. Der Stadtteil ist noch heute Spiegelbild des aufkommenden Wohlstands Bonns im 19. Jahrhundert. Gezeigt wird das angrenzende Poppelsdorfer Schloss mit seinem Wassergraben aus kurfürstlicher Zeit (nur Außenbesichtigungen).",
+    "Bild" : "poppelsdorfer-schloss.jpg",
+    "Dauer" : 120,
+    "Gruppengroesse" : 25,
+    "ID" : 24,
+    "PreisD" : 96,
+    "PreisF" : 126,
+    "Region" : "BU",
+    "Startpunkt" : {
+      "Lat" : "50.724580",
+      "Lng" : "7.090910",
+      "Ort" : "Meckenheimer Allee 171, 53115 Bonn"
+    },
+    "Titel" : "Südstadt rund ums Poppelsdorfer Schloss",
+    "Tourtyp" : "SW"
+  } ],
+  "Tourtypen" : [ {
+    "ID" : "SW",
+    "Icon" : "logo-skype",
+    "Name" : "Segwaytouren"
+  }, {
+    "ID" : "RT",
+    "Icon" : "bicycle",
+    "Name" : "Radtouren"
+  }, {
+    "ID" : "RG",
+    "Icon" : "refresh-circle",
+    "Name" : "Rundgänge"
+  }, {
+    "ID" : "BF",
+    "Icon" : "bus",
+    "Name" : "Busfahrten"
+  }, {
+    "ID" : "ST",
+    "Icon" : "boat",
+    "Name" : "Schiffstouren"
+  }, {
+    "ID" : "WA",
+    "Icon" : "walk",
+    "Name" : "Wanderungen"
+  } ]
+}

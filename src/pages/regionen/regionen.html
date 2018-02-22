@@ -17,5 +17,9 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item *ngFor="let region of regionen" (click)="showTourListe(region)">
+      {{region.Name}}
+    </button>
+  </ion-list>
 </ion-content>

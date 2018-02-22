@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service'
+
 /**
  * Generated class for the TourTypenPage page.
  *
@@ -15,11 +17,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TourTypenPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  tourtypen: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private btService: BobToursServiceProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TourTypenPage');
+    this.tourtypen = this.btService.tourtypen;
+  }
+
+  showTourListe(tourtyp) {
+    this.navCtrl.push('ListePage', ['Tourtyp', tourtyp]);
   }
 
 }

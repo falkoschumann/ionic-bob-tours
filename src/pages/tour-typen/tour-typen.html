@@ -17,5 +17,9 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item *ngFor="let tourtyp of tourtypen" (click)="showTourListe(tourtyp)">
+      {{tourtyp.Name}}
+    </button>
+  </ion-list>
 </ion-content>

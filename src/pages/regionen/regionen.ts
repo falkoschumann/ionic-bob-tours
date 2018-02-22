@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service'
+
 /**
  * Generated class for the RegionenPage page.
  *
@@ -15,11 +17,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class RegionenPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  regionen: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private btService: BobToursServiceProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegionenPage');
+    this.regionen = this.btService.regionen;
+  }
+
+  showTourListe(region) {
+    this.navCtrl.push('ListePage', ['Region', region]);
   }
 
 }
