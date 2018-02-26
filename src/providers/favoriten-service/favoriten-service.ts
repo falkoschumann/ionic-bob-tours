@@ -22,6 +22,7 @@ export class FavoritenServiceProvider {
     this.touren = [];
     this.storage.ready().then(() => {
       this.storage.get('FavoritenIDs').then((IDs) => {
+        this.IDs = JSON.parse(IDs);
         if (this.IDs == null) {
           this.IDs = [];
         } else {
