@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ActionSheetController, IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FavoritenServiceProvider } from '../../providers/favoriten-service/favoriten-service';
-
-/**
- * Generated class for the DetailsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -20,8 +13,10 @@ export class DetailsPage {
   tour = {};
   istFavorit: boolean;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    private favService: FavoritenServiceProvider) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    private favService: FavoritenServiceProvider,
+    private actionSheetCtrl: ActionSheetController) {
   }
 
   ionViewDidLoad() {
@@ -29,8 +24,36 @@ export class DetailsPage {
     this.istFavorit = this.favService.IDs.indexOf(this.navParams.data.ID) != -1;
   }
 
-  navigate() {
-    this.navCtrl.push('AnfragePage');
+  presentActionSheet() {
+    let actionSheet = this.actionSheetCtrl.create({
+      title: 'Tour',
+      buttons: [
+        {
+          text: 'Anfragen',
+          handler: () => {
+            this.navCtrl.push('AnfragePage', this.tour);
+          }
+        },
+        {
+          text: (this.istFavorit) ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen',
+          role: (this.istFavorit) ? 'destructive' : '',
+          handler: () => {
+            if (this.istFavorit) {
+              this.favService.remove(this.tour);
+              this.istFavorit = false;
+            } else {
+              this.favService.add(this.tour);
+              this.istFavorit = true;
+            }
+          }
+        },
+        {
+          text: 'Abbrechen',
+          role: 'cancel'
+        }
+      ]
+    });
+    actionSheet.present();
   }
 
 }
