@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActionSheetController, IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ActionSheetController, AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FavoritenServiceProvider } from '../../providers/favoriten-service/favoriten-service';
 
@@ -16,7 +16,8 @@ export class DetailsPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private favService: FavoritenServiceProvider,
-    private actionSheetCtrl: ActionSheetController) {
+    private actionSheetCtrl: ActionSheetController,
+    private alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -39,8 +40,7 @@ export class DetailsPage {
           role: (this.istFavorit) ? 'destructive' : '',
           handler: () => {
             if (this.istFavorit) {
-              this.favService.remove(this.tour);
-              this.istFavorit = false;
+              this.showConfirm();
             } else {
               this.favService.add(this.tour);
               this.istFavorit = true;
@@ -54,6 +54,29 @@ export class DetailsPage {
       ]
     });
     actionSheet.present();
+  }
+
+  showConfirm() {
+    let confirm = this.alertCtrl.create({
+      title: 'Favorit entfernen?',
+      message: 'Wollen Sie diese Tour wirklich aus den Favoriten entfernen?',
+      buttons: [
+        {
+          text: 'Nein',
+          handler: () => {
+            console.log('Nein angeklickt');
+          }
+        },
+        {
+          text: 'Ja',
+          handler: () => {
+            this.favService.remove(this.tour);
+            this.istFavorit = false;
+          }
+        }
+      ]
+    });
+    confirm.present();
   }
 
 }
