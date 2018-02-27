@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActionSheetController, AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FavoritenServiceProvider } from '../../providers/favoriten-service/favoriten-service';
+import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service';
 
 @IonicPage()
 @Component({
@@ -12,10 +13,13 @@ export class DetailsPage {
 
   tour = {};
   istFavorit: boolean;
+  region: string;
+  tourtyp: string;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private favService: FavoritenServiceProvider,
+    private btService: BobToursServiceProvider,
     private actionSheetCtrl: ActionSheetController,
     private alertCtrl: AlertController) {
   }
@@ -23,6 +27,12 @@ export class DetailsPage {
   ionViewDidLoad() {
     this.tour = this.navParams.data;
     this.istFavorit = this.favService.IDs.indexOf(this.navParams.data.ID) != -1;
+    this.region = this.btService.regionen
+      .filter(r => r.ID == this.tour['Region'])
+      .map(r => r.Name);
+    this.tourtyp = this.btService.tourtypen
+      .filter(t => t.ID == this.tour['Tourtyp'])
+      .map(t => t.Name);
   }
 
   presentActionSheet() {
