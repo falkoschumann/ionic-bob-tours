@@ -1,14 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import _ from 'lodash';
 
 import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service'
-
-/**
- * Generated class for the RegionenPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -25,6 +19,10 @@ export class RegionenPage {
 
   ionViewDidLoad() {
     this.regionen = this.btService.regionen;
+    this.regionen.forEach(region => {
+      let touren = _.filter(this.btService.touren, ['Region', region.ID]);
+      region['Anzahl'] = touren.length;
+    });
   }
 
   showTourListe(region) {

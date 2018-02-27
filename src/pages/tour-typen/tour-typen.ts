@@ -1,14 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import _ from 'lodash';
 
 import { BobToursServiceProvider } from '../../providers/bob-tours-service/bob-tours-service'
-
-/**
- * Generated class for the TourTypenPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -25,6 +19,10 @@ export class TourTypenPage {
 
   ionViewDidLoad() {
     this.tourtypen = this.btService.tourtypen;
+    this.tourtypen.forEach(typ => {
+      let touren = _.filter(this.btService.touren, ['Tourtyp', typ.ID]);
+      typ['Anzahl'] = touren.length;
+    });
   }
 
   showTourListe(tourtyp) {
