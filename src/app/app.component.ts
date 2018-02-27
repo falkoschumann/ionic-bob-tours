@@ -9,11 +9,14 @@ import { BobToursServiceProvider } from '../providers/bob-tours-service/bob-tour
   templateUrl: 'app.html'
 })
 export class MyApp {
+
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = 'FavoritenPage';
 
   pages: Array<{ title: string, component: any }>;
+
+  settings: any = {};
 
   constructor(public platform: Platform,
     public statusBar: StatusBar,
@@ -27,7 +30,6 @@ export class MyApp {
       { title: 'Regionen', component: 'RegionenPage' },
       { title: 'Tour-Typen', component: 'TourTypenPage' }
     ];
-
   }
 
   initializeApp() {
@@ -45,4 +47,9 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+  updateSettings() {
+    console.log(this.settings.notifications);
+  }
+
 }
