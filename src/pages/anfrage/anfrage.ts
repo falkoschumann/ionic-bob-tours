@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AnfragePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-anfrage',
@@ -15,11 +8,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AnfragePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  tour = {};
+  anfrage: any = {};
+  uebermorgen: string;
+  uebernaechstesJahr: string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) { }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AnfragePage');
+    this.tour = this.navParams.data;
+    let heute = new Date();
+    let uebermorgen = new Date(heute.getTime() + 1000 * 60 * 60 * 24 * 2);
+    this.uebermorgen = uebermorgen.toISOString().slice(0, 10);
+    let uebernaechstesJahr = new Date(uebermorgen.getTime() + 1000 * 60 * 60 * 24 * 365 * 2);
+    this.uebernaechstesJahr = uebernaechstesJahr.toISOString().slice(0, 10);
+  }
+
+  absenden() {
+    console.log('Tour angefragt für', this.anfrage.Datum, this.anfrage.Uhrzeit);
   }
 
   navigate() {

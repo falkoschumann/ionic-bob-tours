@@ -1,18 +1,26 @@
-<!--
-  Generated template for the AnfragePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
     <ion-title>Anfrage</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
-  <button ion-button (click)="navigate()">Zurück zu Favoriten</button>
+  <ion-list text-wrap>
+    <ion-item>{{tour.Titel}}</ion-item>
+    <ion-item>
+      <ion-label>Datum</ion-label>
+      <ion-datetime [(ngModel)]="anfrage.Datum" min="{{uebermorgen}}" max="{{uebernaechstesJahr}}" displayFormat="DD. MMMM YYYY"
+        pickerFormat="DD MMMM YYYY" monthNames="Januar,Februar,März,April,Mai,Juni,Juli,August,Septemper,Oktober,November,Dezember"
+        cancelText="Abbrechen" doneText="OK" placeholder="Bitte auswählen!"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Uhrzeit</ion-label>
+      <ion-datetime [(ngModel)]="anfrage.Uhrzeit" displayFormat="HH:mm" pickerFormat="H mm" hourValues="9,10,11,12,13,14,15,16,17,18,19"
+        minuteValues="00,15,30,45" cancelText="Abbrechen" doneText="OK" placeholder="Bitte auswählen!"></ion-datetime>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <button ion-button block (click)="navigate()">Abfrage absenden</button>
+</ion-footer>

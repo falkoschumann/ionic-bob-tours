@@ -13,17 +13,17 @@
     </ion-list>
   </ion-content>
 
+  <ion-footer>
+    <ion-list>
+      <ion-list-header>Einstellungen</ion-list-header>
+      <ion-item>
+        <ion-label>Mitteilungen erlauben</ion-label>
+        <ion-checkbox [(ngModel)]="settings.notifications" (ionChange)="updateSettings()"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </ion-footer>
+
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-
-<ion-footer>
-  <ion-list>
-    <ion-list-header>Einstellungen</ion-list-header>
-    <ion-item>
-      <ion-label>Mitteilungen erlauben</ion-label>
-      <ion-checkbox [(ngModel)]="settings.notifications" (ionChange)="updateSettings()"></ion-checkbox>
-    </ion-item>
-  </ion-list>
-</ion-footer>
