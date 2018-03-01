@@ -15,6 +15,7 @@ export class DetailsPage {
   istFavorit: boolean;
   region: string;
   tourtyp: string;
+  showSocial: boolean;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -33,6 +34,14 @@ export class DetailsPage {
     this.tourtyp = this.btService.tourtypen
       .filter(t => t.ID == this.tour['Tourtyp'])
       .map(t => t.Name);
+  }
+
+  toggleSocial() {
+    this.showSocial = !this.showSocial;
+  }
+
+  openSocial(app) {
+    console.log('Anwender will Tour über ' + app + ' teilen!');
   }
 
   presentActionSheet() {

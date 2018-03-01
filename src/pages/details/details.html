@@ -15,6 +15,27 @@
   </ion-card>
 </ion-content>
 
-<ion-footer padding>
-  <button ion-button block (click)="presentActionSheet()">Optionen</button>
+<ion-footer padding style="height:80px">
+  <button ion-button *ngIf="!showSocial" (click)="presentActionSheet()">
+    Optionen
+  </button>
+  <ion-fab right middle>
+    <button ion-fab mini (click)="toggleSocial()">
+      <ion-icon name="md-share"></ion-icon>
+    </button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="openSocial('facebook')">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </button>
+      <button ion-fab (click)="openSocial('googleplus')">
+        <ion-icon name="logo-googleplus"></ion-icon>
+      </button>
+      <button ion-fab (click)="openSocial('instagram')">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </button>
+      <button ion-fab (click)="openSocial('whatsapp')">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-footer>
