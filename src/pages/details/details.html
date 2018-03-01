@@ -13,6 +13,28 @@
       <p>{{tour.Beschreibung}}</p>
     </ion-card-content>
   </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-8>Dauer:</ion-col>
+          <ion-col col-4>{{tour.Dauer}} min</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-8>Max. Teilnehmerzahl:</ion-col>
+          <ion-col col-4>{{tour.Gruppengroesse}} Personen</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-8>Gruppenpreis (deutsch):</ion-col>
+          <ion-col col-4>{{tour.PreisD}} EUR</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-8>Gruppenpreis (Fremdsprache):</ion-col>
+          <ion-col col-4>{{tour.PreisF}} min</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <ion-footer padding style="height:80px">
